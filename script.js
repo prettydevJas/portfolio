@@ -8,7 +8,13 @@ const   projects = [
         name: "Ordering System",
         descript: "The Ordering System is a software application designed to streamline the process of placing and managing orders for businesses. It allows customers to browse products, add items to their cart, and complete the checkout process online. The system also provides features for inventory management, order tracking, and customer communication. It can be integrated with various payment gateways and can be customized to fit the specific needs of different types of businesses.",
         stack : ["Php", "Html","Css", "MySQL"]
-    }
+    },
+    
+      {
+        name: "Vape Detector",
+        descript: "The Vape Detector is a device designed to identify and alert users to the presence of vape smoke in their environment. It uses advanced sensors to detect vapor particles and can be integrated with smart home systems for automated responses.",
+        stack : ["Arduino", "ESP32"]
+    },
 ];
 
 // Render projects dynamically
