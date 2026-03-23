@@ -139,6 +139,38 @@
       box-shadow: 0 0 20px #0af;
     }
 
+    .project-card h3 {
+      color: #0af;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .project-card p {
+      color: #ccc;
+      margin-bottom: 15px;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(0, 170, 255, 0.2);
+      border: 1px solid #0af;
+      color: #0af;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -224,15 +256,7 @@
 
 <section id="projects">
   <h2 class="section-title">Project Portfolio</h2>
-  <div class="content" style="text-align:center; margin:auto; display:block;">
-    <p style="text-align:center;">Explore my full project compilations here:</p>
-    <br>
-    <div style="text-align:center;">
-      <a class="link" href="https://drive.google.com/drive/folders/1JAv-gUnEu560sMT2x-CHJy5BgQOnyb5w" target="_blank">
-        View Google Drive Portfolio
-      </a>
-    </div>
-  </div>
+  <div class="projects" id="projects-container"></div>
 </section>
 
 <section id="contact" style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
@@ -251,5 +275,6 @@
   <p>© 2026 Jasmine Kate A. Patiño | All Rights Reserved</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
