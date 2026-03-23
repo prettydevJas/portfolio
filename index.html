@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasmine Kate A. Patiño | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      border-bottom: 1px solid rgba(0, 119, 255, 0.3);
+    }
+
+    header h1 {
+      color: #0af;
+      text-shadow: 0 0 10px #0af;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #0af;
+      text-shadow: 0 0 8px #0af;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #0af;
+      text-shadow: 0 0 15px #0af;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      color: #ccc;
+      max-width: 700px;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: 2px solid #0af;
+      color: #0af;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0af;
+      color: #000;
+      box-shadow: 0 0 15px #0af;
+    }
+
+    section {
+      padding: 80px 50px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #0af;
+      text-shadow: 0 0 10px #0af;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0af;
+      box-shadow: 0 0 20px #0af;
+    }
+
+    .content {
+      max-width: 600px;
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid rgba(0,119,255,0.3);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #0af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(0,119,255,0.3);
+      color: #aaa;
+    }
+
+    a.link {
+      color: #0af;
+      text-decoration: none;
+    }
+
+    a.link:hover {
+      text-shadow: 0 0 10px #0af;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jasmine Kate A. Patiño</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Embedded Systems Specialist</h2>
+  <p>
+    Developing efficient and practical solutions through programming, electronics, and IoT. Experienced in building smart systems, prototypes, and real-world technology solutions.
+  </p>
+  <a href="#projects" class="btn">View Portfolio</a>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-container">
+    <!-- REPLACE image.jpg with your actual photo -->
+    <img src="profile.jpg" alt="Profile Photo" class="about-img">
+
+    <div class="content">
+      <p>
+        Hi, I’m Kate, also known as “JK,” a BSIT graduate from Zamboanga City. I specialize in embedded systems and IoT, combining hardware and software to create innovative solutions.
+      </p>
+      <br>
+      <p>
+        I am a fun, versatile, and responsible individual with strong adaptability and time management skills. I consistently meet deadlines and maintain high productivity while balancing multiple responsibilities.
+      </p>
+      <br>
+      <p>
+        My academic experience as a scholar and student officer helped me develop strong communication skills, allowing me to collaborate effectively and understand client needs clearly.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Programming & IoT</h3>
+      <p>Arduino, ESP32, ESP8266, sensors and actuators integration for smart systems.</p>
+    </div>
+    <div class="card">
+      <h3>Electronics</h3>
+      <p>Reliable circuit design, wiring, and hardware troubleshooting.</p>
+    </div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Responsive, clean, and user-friendly web applications across devices.</p>
+    </div>
+    <div class="card">
+      <h3>Graphic Design</h3>
+      <p>Creative visual design for branding, content, and presentations.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Project Portfolio</h2>
+  <div class="content" style="text-align:center; margin:auto; display:block;">
+    <p style="text-align:center;">Explore my full project compilations here:</p>
+    <br>
+    <div style="text-align:center;">
+      <a class="link" href="https://drive.google.com/drive/folders/1JAv-gUnEu560sMT2x-CHJy5BgQOnyb5w" target="_blank">
+        View Google Drive Portfolio
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="content">
+    <p>Email: jk.jasminekate@gmail.com</p>
+    <p>Phone: 09628151743</p>
+    <br>
+    <p>
+      Open to project opportunities with local and international clients, including system development and hands-on implementation.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Jasmine Kate A. Patiño | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
