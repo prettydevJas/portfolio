@@ -1,20 +1,20 @@
-const   projects = [
+const projects = [
     {
         name: "Smart Cane",
         descript: "Smart Cane is a project that aims to assist visually impaired individuals in navigating their surroundings safely. The cane is equipped with sensors that detect obstacles and provide feedback to the user through vibrations or audio cues. It also has GPS functionality to help users find their way and can connect to a smartphone app for additional features such as route planning and emergency assistance.",
-        stack : ["Arduino"]
+        stack: ["Arduino"]
     },
     {
-        name: "Ordering System",
-        descript: "The Ordering System is a software application designed to streamline the process of placing and managing orders for businesses. It allows customers to browse products, add items to their cart, and complete the checkout process online. The system also provides features for inventory management, order tracking, and customer communication. It can be integrated with various payment gateways and can be customized to fit the specific needs of different types of businesses.",
-        stack : ["Php", "Html","Css", "MySQL"]
-    },
-    
-      {
         name: "Vape Detector",
         descript: "The Vape Detector is a device designed to identify and alert users to the presence of vape smoke in their environment. It uses advanced sensors to detect vapor particles and can be integrated with smart home systems for automated responses.",
-        stack : ["Arduino", "ESP32"]
+        stack: ["Arduino", "ESP32"]
     },
+
+    {
+        name: "Lora Monitoring System",
+        descript: "The Lora Monitoring System is a project that utilizes LoRa technology to monitor and transmit data from remote locations. It is designed for applications such as environmental monitoring, industrial automation, and smart city initiatives.",
+        stack: ["Arduino", "Ebyte Lora"]
+    }
 ];
 
 // Render projects dynamically
